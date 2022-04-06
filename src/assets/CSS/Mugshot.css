@@ -1,0 +1,56 @@
+.characters-block {
+  margin: 0 auto;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 2500px;
+  /* background-image: url("../pictures/Iron_Man_Marvel.jpeg"); */
+  /* background-repeat: no-repeat;
+  background-size: auto; */
+}
+
+.mugshot-block {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin: 15px;
+  width: 500px;
+  background-color: #ed1c24;
+  padding: 20px;
+  border-radius: 20px;
+}
+.mugshot-block:hover p {
+  transition: 900ms ease;
+  opacity: 1;
+}
+.mugshot-sub-block {
+  display: flex;
+}
+/* .mugshot-pic-block {
+  border: solid chartreuse 4px;
+  width: 20%;
+  height: 400px;
+} */
+.mugshot-pic-block img {
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border: solid black 4px;
+  box-sizing: border-box;
+}
+
+.secret {
+  flex: 1;
+  background-color: whitesmoke;
+  max-height: 350px;
+  overflow: hidden;
+  transition: 400ms ease;
+  opacity: 0;
+  padding: 10px;
+  margin: 10px;
+  border: solid 4px black;
+  border-radius: 10%;
+  font-size: 16px;
+}
