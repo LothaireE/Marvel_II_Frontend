@@ -1,10 +1,9 @@
 import "../assets/CSS/Comics.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Comic from "../components/Comic";
 
 const Comics = ({ apiUrl }) => {
-  console.log(apiUrl);
-
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -13,7 +12,7 @@ const Comics = ({ apiUrl }) => {
         const response = await axios.get(`${apiUrl}/comics`);
         setData(response.data);
         setIsLoading(false);
-        console.log("response.data=>", response.data);
+        // console.log("response.data 2=>", response.data);
       } catch (error) {
         console.log(error.message);
       }
@@ -22,9 +21,7 @@ const Comics = ({ apiUrl }) => {
   }, [apiUrl]);
 
   return (
-    <div className="container">
-      <h1>Comics</h1>
-    </div>
+    <div className="container">{data && <Comic results={data.results} />}</div>
   );
 };
 export default Comics;

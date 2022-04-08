@@ -1,0 +1,52 @@
+.form-block {
+    background-color: white;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sub-form{
+ padding: 18px;
+    min-height: 150px;
+    height: 10vw;
+    width: 400px;
+    border: solid 3px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+ 
+}
+.form-line {
+    display: flex;
+    justify-content: space-between;
+
+}
+input {
+    border: none;   
+    border-bottom: solid 1px dimgray; 
+}
+button {
+line-height: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 150px;
+    border: none;
+    background-color: red;
+    font-size: 18px;
+    color: white;
+    
+
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 9px #999;
+    transition: 200ms;
+}
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 10px #666;
+    transform: translateY(20px);
+  }

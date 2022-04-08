@@ -20,8 +20,8 @@ function App() {
         <Route path="/characters" element={<Characters apiUrl={apiUrl} />} />
         <Route path="/character/:id" element={<Character apiUrl={apiUrl} />} />
         <Route path="/comics" element={<Comics apiUrl={apiUrl} />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp apiUrl={apiUrl} />} />
+        <Route path="/signin" element={<SignIn apiUrl={apiUrl} />} />
         <Route path="/favorites" element={<Favorites apiUrl={apiUrl} />} />
       </Routes>
     </Router>

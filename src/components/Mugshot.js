@@ -19,7 +19,7 @@ const Mugshot = ({ results }) => {
                 <div className="mugshot-block">
                   <div className="mugshot-sub-block">
                     <div className="left">
-                      <div>{character.name}</div>
+                      <div className="mugshot-name">{character.name}</div>
                       <div className="mugshot-pic-block">
                         <img
                           src={`${character.thumbnail.path}.${character.thumbnail.extension}`}

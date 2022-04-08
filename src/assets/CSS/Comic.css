@@ -1,0 +1,26 @@
+.comics-block {
+  border: solid chartreuse 5px;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 2500px;
+}
+
+.comic-block {
+  margin: 20px 10px;
+  /* border: solid tomato 3px; */
+  box-sizing: border-box;
+  width: 260px;
+
+}
+.comic-cover {
+  object-fit: cover;
+  width: 100%;
+}
+.comic-cover:hover {
+  transition:200ms ;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px;
+  color: dimgray;
+}

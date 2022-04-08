@@ -1,7 +1,6 @@
 .characters-block {
   margin: 0 auto;
   display: flex;
-
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 2500px;
@@ -13,7 +12,6 @@
 .mugshot-block {
   flex-direction: row;
   flex-wrap: wrap;
-
   margin: 15px;
   width: 500px;
   background-color: #ed1c24;
@@ -27,18 +25,32 @@
 .mugshot-sub-block {
   display: flex;
 }
-/* .mugshot-pic-block {
-  border: solid chartreuse 4px;
-  width: 20%;
-  height: 400px;
-} */
-.mugshot-pic-block img {
-  margin: auto;
+.mugshot-name {
+  font-size: 28px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+
+}
+.mugshot-pic-block {
+  border: solid #181818 4px;
   width: 300px;
   height: 400px;
-  object-fit: cover;
-  border: solid black 4px;
   box-sizing: border-box;
+
+}
+.mugshot-pic-block img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: solid black 4px; */
 }
 
 .secret {
@@ -50,7 +62,7 @@
   opacity: 0;
   padding: 10px;
   margin: 10px;
-  border: solid 4px black;
+  border: solid 4px #181818;
   border-radius: 10%;
   font-size: 16px;
 }
